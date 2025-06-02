@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #03050d;
+  overflow-x: hidden;
+  color: white;
+}
+a {
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 40px;
+  width: 140px;
+  margin: 20px 170px;
+}
+.signin {
+  background-color: rgb(230, 9, 20);
+  color: white;
+  padding: 8px 24px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 20px 170px;
+}
+
+header {
+  background-image: url("./Netflix/background.jpg");
+  min-height: 90vh;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  top: 0;
+  background-repeat: no-repeat;
+  margin: 0;
+  background-size: cover;
+}
+header .main {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.hero {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  gap: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.hero h1 {
+  font-size: 60px;
+  font-weight: 900;
+  max-width: 50vw;
+}
+.hero p:nth-of-type(1) {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.hero p:nth-of-type(2) {
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  gap: 10px;
+}
+.login form {
+  display: flex;
+  gap: 10px;
+}
+.mail {
+  padding: 17px 200px 17px 10px;
+  color: white;
+  border: 1px solid rgb(132, 131, 131);
+  font-size: 16px;
+  background-color: rgba(15, 15, 15, 0.7);
+  border-radius: 4px;
+}
+.mail::placeholder {
+  font-weight: 470;
+  color: rgb(193, 191, 191);
+}
+.login button {
+  background-color: rgb(230, 9, 20);
+  color: white;
+  padding: 14px 34px;
+  font-size: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 0px;
+}
+
+.line {
+  height: 4px;
+  width: 100%;
+  background-color: rgb(81, 81, 81);
+}
+
+section {
+  color: white;
+  margin-top: 51px;
+  padding: 11px 40px 0px 150px;
+  width: 100vw;
+}
+section h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+section p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.trending {
+  margin-right: 170px;
+  overflow: auto;
+}
+.trending ol {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  padding: 0px 5%;
+  align-items: center;
+}
+.trending .next {
+  height: 55px;
+  width: 30px;
+}
+.trending button {
+  position: absolute;
+  top: 825px;
+  right: 150px;
+  height: 120px;
+  width: 32px;
+  background-color: rgba(65, 64, 64, 0.4);
+  border-radius: 22px;
+  border: 0px;
+}
+.trending ol li {
+  padding: 12px;
+}
+.trending ol li img {
+  height: 235px;
+  width: 165px;
+}
+.trending a img {
+  border-radius: 10px;
+}
+.trending::-webkit-scrollbar {
+  display: none;
+}
+.trending a img:hover {
+  transform: scale(1.1);
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+}
+
+.reasons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.reasons div {
+  position: relative;
+  height: 290px;
+  width: 230px;
+  background-color: rgb(29, 25, 48);
+  padding: 15px;
+  border-radius: 15px;
+}
+.reasons svg {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.faqs ul li {
+  list-style: none;
+  font-size: 24px;
+  font-weight: 400;
+  width: 940px;
+  background-color: #2d2d2d;
+  color: white;
+  padding: 27px;
+  margin-bottom: 9px;
+}
+.faqs li img {
+  float: right;
+}
+
+section:nth-of-type(4) .mail {
+  padding-right: 340px;
+}
+
+footer {
+  padding: 70px 150px;
+  color: rgb(179, 179, 179);
+}
+footer a {
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .contact {
+  margin-bottom: 40px;
+}
+footer div:nth-of-type(2) ul {
+  display: grid;
+  grid-template-columns: [first]270px [second]270px [third]270px [fourth]270px;
+}
+footer div:nth-of-type(2) ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.language {
+  padding: 5px 20px;
+  margin: 30px 0px;
+  border: 1px solid rgb(148, 146, 146);
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgb(15, 15, 15);
+  color: white;
+}
+
+.disclaimer p {
+  margin: 30px 0px;
+}
+.disclaimer a {
+  color: rgb(69, 138, 230);
+}
